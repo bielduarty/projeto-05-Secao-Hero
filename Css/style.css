@@ -1,4 +1,8 @@
-/* RESET *//* 1. ESTILOS GERAIS */
+/* Imagem de Fundo: Em vez de uma cor sólida, tente adicionar uma imagem de fundo na .hero-section usando a propriedade background-image: url(...). Como você pode garantir que o texto branco continue legível? (Dica: pesquise sobre como adicionar um gradiente escuro sobre a imagem).
+
+Múltiplos Botões: Adicione um segundo botão, com um estilo diferente (ex: apenas com borda, sem fundo), ao lado do primeiro. Como você usaria o Flexbox no .hero-content para alinhá-lo */
+/* RESET */
+/* 1. ESTILOS GERAIS */
 
 body {
 
