@@ -11,15 +11,15 @@ Múltiplos Botões: Adicione um segundo botão, com um estilo diferente (ex: ape
 }
 
 body {
-    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    font-family: 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: #f8f9fa;
 }
 
 .hero-section {
-    background-image: url(/assets/img/info2.jpg);
+    background-image: url(/assets/img/info3.webp);
     background-size: cover;
-    color: #000000;
+    color: #ffffff;
     background-position: center;
     display: flex;
     /* É uma forma de alinhar elementos lado a lado ou um embaixo do outro, com controle total de espaçamento, alinhamento e direção. */
@@ -50,12 +50,12 @@ body {
     font-weight: 300;
     line-height: 1.6;
     margin-bottom: 40px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .hero-button {
     background-color: #007bff;
-    border: 2px solid #ffffff;
+    border: 3px solid #000000;
     color: #ffffff;
     border-radius: 5px;
     text-decoration: none;
@@ -65,7 +65,7 @@ body {
 }
 
 .hero-button:hover {
-    background-color: #0056b3;
+    background-color: #000000;
     transform: translateY(-2px);
 }
 
@@ -78,7 +78,7 @@ body {
 .hero-button-outline {
     background-color: #007bff;
     color: #ffffff;
-    border: 2px solid #ffffff;
+    border: 3px solid #000000;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -88,7 +88,7 @@ body {
 }
 
 .hero-button-outline:hover {
-    background-color: #0056b3;
+    background-color: #000000;
     color: #fff;
     transform: translateY(-2px);
 }
