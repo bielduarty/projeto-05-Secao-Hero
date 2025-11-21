@@ -1,153 +1,94 @@
+/* RESET */
 /* Imagem de Fundo: Em vez de uma cor sólida, tente adicionar uma imagem de fundo na .hero-section usando a propriedade background-image: url(...). Como você pode garantir que o texto branco continue legível? (Dica: pesquise sobre como adicionar um gradiente escuro sobre a imagem).
 
 Múltiplos Botões: Adicione um segundo botão, com um estilo diferente (ex: apenas com borda, sem fundo), ao lado do primeiro. Como você usaria o Flexbox no .hero-content para alinhá-lo */
-/* RESET */
 /* 1. ESTILOS GERAIS */
 
-body {
-
-    font-family: 'Roboto', 'Segoe UI', sans-serif; /* Fonte moderna e legível */
-
-    margin: 0;
-
-    background-color: #f8f9fa; /* Fundo muito claro */
-
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
 }
 
- 
-
-/* 2. ESTILOS DA SEÇÃO HERO - O FOCO DO ESTUDO */
+body {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+}
 
 .hero-section {
-
-    background-color: #343a40; /* Um fundo escuro para criar contraste */
-
-    color: #ffffff; /* Texto branco */   
-
-    /* Usamos Flexbox aqui para centralizar o container de conteúdo verticalmente.
-
-     * Isso é útil se quisermos que a seção ocupe a tela inteira.
-
-     */
-
+    background-image: url(/assets/img/info2.jpg);
+    background-size: cover;
+    color: #000000;
+    background-position: center;
     display: flex;
-
+    /* É uma forma de alinhar elementos lado a lado ou um embaixo do outro, com controle total de espaçamento, alinhamento e direção. */
     align-items: center;
-
-    justify-content: center;    
-
-    /* Define uma altura mínima para a seção, igual à altura da janela de visualização.
-
-     * Isso faz com que a seção Hero ocupe a tela inteira verticalmente.
-
-     */
-
+    justify-content: center;
     min-height: 100vh;
-
-    /* Adiciona um padding para garantir que o conteúdo não cole nas bordas
-
-     * em telas pequenas.
-
-     */
-
+    /* Isso faz com que a seção Hero ocupe a tela inteira verticalmente. */
     padding: 20px;
-
+    /* Adiciona um padding para garantir que o conteúdo não cole nas bordas da tela em dispositivos menores. */
 }
-
- 
-
-/* 3. O CONTAINER DO CONTEÚDO */
 
 .hero-content {
 
-    text-align: center; /* Centraliza todo o texto e o botão */
-
-    max-width: 700px; /* Limita a largura máxima do texto para melhor legibilidade */
-
+    text-align: center;
+    max-width: 700px;
 }
-
- 
-
-/* 4. ESTILOS DE TIPOGRAFIA - HIERARQUIA VISUAL */
 
 .hero-title {
-
-    /* Tamanho de fonte muito grande para ser o ponto de foco principal */
-
-    font-size: 3.5rem; /* 56px */  
-
-    /* Peso da fonte mais grosso para dar impacto */
-
+    font-size: 3.5rem;
     font-weight: 700;
-
-    line-height: 1.2; /* Espaçamento entre as linhas do título, caso ele quebre */
-
+    line-height: 1.2;
     margin-top: 0;
-
-    margin-bottom: 20px; /* Espaço abaixo do título */
-
+    margin-bottom: 20px;
 }
-
- 
 
 .hero-subtitle {
-
-    font-size: 1.25rem; /* 20px */
-
-    font-weight: 300; /* Peso mais leve para o texto de suporte */
-
+    font-size: 1.30rem;
+    font-weight: 300;
     line-height: 1.6;
-
-    margin-bottom: 40px; /* Espaço maior para separar o texto do botão */  
-
-    /* Cor um pouco mais suave que o branco puro para reduzir o contraste */
-
-    color: #e9ecef;
-
+    margin-bottom: 40px;
+    color: #000000;
 }
-
- 
-
-/* 5. ESTILOS DO BOTÃO (CALL-TO-ACTION) */
 
 .hero-button {
-
-    /* ----- Estilos visuais do botão ----- */
-
-    background-color: #007bff; /* Cor de destaque (azul) */
-
+    background-color: #007bff;
+    border: 2px solid #ffffff;
     color: #ffffff;
-
-    border-radius: 5px; /* Cantos arredondados */
-
-    text-decoration: none; /* Remove o sublinhado */
-
+    border-radius: 5px;
+    text-decoration: none;
     font-weight: bold;
-
     font-size: 1rem;
-
-    /* ----- Box Model para o botão ----- */
-
-    /* O padding cria o "corpo" do botão ao redor do texto */
-
     padding: 15px 30px;
-
-    /* ----- Animação suave ----- */
-
-    transition: background-color 0.3s, transform 0.2s;
-
 }
 
- 
-
-/* Efeito de hover para o botão */
-
 .hero-button:hover {
-
-    background-color: #0056b3; /* Um tom de azul mais escuro */
-
-    /* Um pequeno efeito de "salto" para dar feedback */
-
+    background-color: #0056b3;
     transform: translateY(-2px);
+}
 
+.buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.hero-button-outline {
+    background-color: #007bff;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 15px 30px;
+    transition: 0.3s;
+}
+
+.hero-button-outline:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transform: translateY(-2px);
 }
